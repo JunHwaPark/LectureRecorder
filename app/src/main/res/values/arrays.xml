@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="mode">
+        <item>Stereo</item>
+        <item>Mono</item>
+    </string-array>
+    <string-array name="quality">
+        <item>High</item>
+        <item>Normal</item>
+        <item>Low</item>
+    </string-array>
+</resources>

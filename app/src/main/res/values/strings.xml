@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">LectureRecorder</string>
+    <string name="drawer_header_text">Contact to... wnsghk1025@naver.com</string>
+    <string name="nav_nomedia">nomedia</string>
+    <string name="nav_test">Test mic</string>
+    <string name="tab_record">Record</string>
+    <string name="tab_list">List</string>
+    <string name="nav_sub_menu">etc</string>
+    <string name="open_source">Open Source license</string>
+    <string name="MODE">MODE</string>
+    <string name="btn_quality">Quality</string>
+    <string name="Prefix_filename">Rec_</string>
+    <string name="mode_dialog">Select mode</string>
+    <string name="quality_dialog">Select quality</string>
+    <string name="btn_play">Play</string>
+    <string name="btn_pause">Pause</string>
+    <string name="btn_exit">Exit</string>
+</resources>
