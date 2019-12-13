@@ -1,4 +1,4 @@
-package com.junhwa.lecturerecorder.recyclerview;
+package com.junhwa.lecturerecorder.recyclerview.recFile;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,10 +9,11 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.junhwa.lecturerecorder.R;
+import com.junhwa.lecturerecorder.recyclerview.lecture_list.LectureAdapter;
 
 import java.util.ArrayList;
 
-public class RecFileAdapter extends RecyclerView.Adapter<RecFileAdapter.ViewHolder> implements OnRecFileItemClickListener{
+public class RecFileAdapter extends RecyclerView.Adapter<RecFileAdapter.ViewHolder> implements OnRecFileItemClickListener {
     ArrayList<RecFile> items = new ArrayList<>();
     OnRecFileItemClickListener listener;
 

@@ -3,11 +3,12 @@
 
     <group android:checkableBehavior="single">
         <item
+            android:id="@+id/navigation_item_directory_management"
+            android:title="@string/nav_directory_management" />
+
+        <item
             android:id="@+id/navigation_item_nomedia"
             android:title="@string/nav_nomedia" />
-        <item
-            android:id="@+id/navigation_item_test"
-            android:title="@string/nav_test" />
     </group>
 
     <item android:title="@string/nav_sub_menu">

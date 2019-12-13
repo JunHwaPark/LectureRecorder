@@ -1,13 +1,12 @@
 package com.junhwa.lecturerecorder.recorder;
 
 import android.app.Service;
-import android.content.Context;
 import android.content.Intent;
 import android.media.MediaRecorder;
 import android.os.Build;
 import android.os.Environment;
 import android.os.IBinder;
-import android.widget.ProgressBar;
+import android.util.Log;
 
 import java.io.File;
 
@@ -15,13 +14,10 @@ public class RecordService extends Service {
     public final static int INITIALIZE_RECORDER = 0;
     public final static int STOP_RECORD = 1;
     public final static int PAUSE = 2;
+    public final static int RESUME = 3;
 
     private MediaRecorder recorder;
-    private Context context;
     Boolean isRecording = false;
-    ProgressBar progressBar;
-    int channel;
-    int bitRate;
 
     public RecordService() {
     }
@@ -30,7 +26,7 @@ public class RecordService extends Service {
     public int onStartCommand(Intent intent, int flags, int startId) {
         if (intent == null)
             return START_STICKY;
-
+        Log.d("RecordService", "onStartCommand");
         int command = intent.getIntExtra("COMMAND", INITIALIZE_RECORDER);
         if (command == INITIALIZE_RECORDER) {
             int channel = intent.getIntExtra("CHANNEL", 2);
@@ -50,6 +46,7 @@ public class RecordService extends Service {
                 recorder.prepare();
                 recorder.start();
                 isRecording = true;
+                //startNotification();
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -62,6 +59,9 @@ public class RecordService extends Service {
             recorder.release();
             recorder = null;
             isRecording = false;
+        } else if (command == RESUME && recorder != null) {
+            if (Build.VERSION.SDK_INT > 23)
+                recorder.resume();
         }
         return super.onStartCommand(intent, flags, startId);
     }

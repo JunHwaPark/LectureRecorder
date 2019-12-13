@@ -1,4 +1,4 @@
-package com.junhwa.lecturerecorder.recyclerview;
+package com.junhwa.lecturerecorder.recyclerview.recFile;
 
 import java.text.DecimalFormat;
 

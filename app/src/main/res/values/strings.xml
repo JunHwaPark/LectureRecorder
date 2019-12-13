@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">LectureRecorder</string>
     <string name="drawer_header_text">Contact to... wnsghk1025@naver.com</string>
-    <string name="nav_nomedia">nomedia</string>
-    <string name="nav_test">Test mic</string>
+    <string name="nav_nomedia">.nomedia</string>
+    <string name="nav_directory_management">Lecture</string>
     <string name="tab_record">Record</string>
     <string name="tab_list">List</string>
     <string name="nav_sub_menu">etc</string>
@@ -15,4 +15,10 @@
     <string name="btn_play">Play</string>
     <string name="btn_pause">Pause</string>
     <string name="btn_exit">Exit</string>
+    <string name="btn_add_lecture">Add lecture</string>
+    <string name="hint_lecture">Lecture</string>
+    <string name="hint_professor">Professor</string>
+    <string name="delete_lecture">Delete lecture</string>
+    <string name="d_lecture_text">All files about this lecture will deleted.\nDelete it?</string>
+    <string name="resume">Resume</string>
 </resources>
